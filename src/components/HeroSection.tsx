@@ -1,123 +1,104 @@
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { ArrowRight, Clock, TrendingUp, Zap } from 'lucide-react';
+import { ArrowRight, CheckCircle, Zap } from 'lucide-react';
 
 export const HeroSection = () => {
-  const [timeLeft, setTimeLeft] = useState({ hours: 23, minutes: 59, seconds: 59 });
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft(prev => {
-        if (prev.seconds > 0) {
-          return { ...prev, seconds: prev.seconds - 1 };
-        } else if (prev.minutes > 0) {
-          return { ...prev, minutes: prev.minutes - 1, seconds: 59 };
-        } else if (prev.hours > 0) {
-          return { ...prev, hours: prev.hours - 1, minutes: 59, seconds: 59 };
-        }
-        return prev;
-      });
-    }, 1000);
-
-    return () => clearInterval(timer);
-  }, []);
-
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center px-4 py-20 overflow-hidden">
       {/* Background Effects */}
-      <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-      </div>
-
-      <div className="relative z-10 max-w-6xl mx-auto text-center">
+      <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-slate-900 to-pink-900/20" />
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%239C92AC" fill-opacity="0.05"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-50" />
+      
+      <div className="relative max-w-6xl mx-auto text-center">
         {/* Urgency Badge */}
-        <Badge className="mb-6 bg-red-500/20 text-red-300 border-red-500/30 px-4 py-2 text-sm animate-bounce">
-          🔥 Oferta Limitada - Mais de 50% OFF
+        <Badge className="mb-6 bg-red-500/20 text-red-300 border-red-500/30 px-6 py-3 text-lg animate-pulse">
+          🔥 Oferta Especial - Economia de até 45%
         </Badge>
 
-        {/* Main Headline */}
+        {/* Main Headlines */}
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-          Desbloqueie o Poder da
+          Templates N8N
           <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-            {" "}Automação
+            {" "}Profissionais
           </span>
-          <br />
-          com n8n
         </h1>
 
-        {/* Subheadline */}
-        <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed">
-          Chega de tarefas repetitivas! Nossos templates n8n prontos para usar vão 
-          <strong className="text-white"> liberar seu tempo, reduzir erros e aumentar sua produtividade</strong> 
-          com apenas alguns cliques.
+        <h2 className="text-2xl md:text-3xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed">
+          6 Pacotes Especializados de Automação Prontos para Revolucionar Seu Negócio
+        </h2>
+
+        <p className="text-xl text-gray-400 mb-12 max-w-3xl mx-auto">
+          Mais de 50 templates N8N cuidadosamente desenvolvidos para diferentes setores e necessidades. 
+          Automatize marketing, vendas, operações, tecnologia e muito mais com soluções prontas para usar.
         </p>
 
-        {/* Value Props */}
-        <div className="flex flex-wrap justify-center gap-6 mb-10">
-          <div className="flex items-center gap-2 text-green-400">
-            <Zap className="w-5 h-5" />
-            <span>Implementação Instantânea</span>
+        {/* Key Benefits */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-4xl mx-auto">
+          <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-white/10">
+            <CheckCircle className="w-8 h-8 text-green-400 flex-shrink-0" />
+            <div className="text-left">
+              <h3 className="text-white font-semibold">Templates Prontos</h3>
+              <p className="text-gray-400 text-sm">Implementação em minutos</p>
+            </div>
           </div>
-          <div className="flex items-center gap-2 text-blue-400">
-            <TrendingUp className="w-5 h-5" />
-            <span>Resultados Imediatos</span>
+          
+          <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-white/10">
+            <Zap className="w-8 h-8 text-yellow-400 flex-shrink-0" />
+            <div className="text-left">
+              <h3 className="text-white font-semibold">6 Setores Cobertos</h3>
+              <p className="text-gray-400 text-sm">Soluções especializadas</p>
+            </div>
           </div>
-          <div className="flex items-center gap-2 text-purple-400">
-            <Clock className="w-5 h-5" />
-            <span>Economia de Tempo Massiva</span>
+          
+          <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-white/10">
+            <CheckCircle className="w-8 h-8 text-purple-400 flex-shrink-0" />
+            <div className="text-left">
+              <h3 className="text-white font-semibold">45% de Economia</h3>
+              <p className="text-gray-400 text-sm">Pacote completo</p>
+            </div>
           </div>
         </div>
 
-        {/* Countdown Timer */}
-        <div className="bg-black/30 backdrop-blur-sm rounded-2xl p-6 mb-10 max-w-md mx-auto border border-white/10">
-          <p className="text-yellow-400 text-sm font-semibold mb-3">⏰ OFERTA EXPIRA EM:</p>
-          <div className="flex justify-center gap-4">
-            <div className="text-center">
-              <div className="text-3xl font-bold text-white">{String(timeLeft.hours).padStart(2, '0')}</div>
-              <div className="text-xs text-gray-400">HORAS</div>
-            </div>
-            <div className="text-white text-3xl">:</div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-white">{String(timeLeft.minutes).padStart(2, '0')}</div>
-              <div className="text-xs text-gray-400">MIN</div>
-            </div>
-            <div className="text-white text-3xl">:</div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-white">{String(timeLeft.seconds).padStart(2, '0')}</div>
-              <div className="text-xs text-gray-400">SEG</div>
-            </div>
+        {/* Price Highlight */}
+        <div className="bg-black/30 backdrop-blur-sm rounded-3xl p-8 mb-8 max-w-2xl mx-auto border border-white/10">
+          <div className="mb-6">
+            <div className="text-sm text-gray-400 line-through mb-2">De R$ 539,40 (individual)</div>
+            <div className="text-5xl md:text-6xl font-bold text-white mb-2">R$ 299,90</div>
+            <Badge className="bg-green-500 text-white font-bold text-lg px-4 py-2">
+              PACOTE COMPLETO - ECONOMIZE R$ 239,50
+            </Badge>
           </div>
         </div>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="space-y-4">
           <Button 
             size="lg" 
-            className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-4 text-lg rounded-xl transform hover:scale-105 transition-all duration-300 shadow-2xl"
+            className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-6 text-xl rounded-2xl transform hover:scale-105 transition-all duration-300 shadow-2xl"
           >
-            Quero o Pacote Completo por R$ 198,80
-            <ArrowRight className="ml-2 w-5 h-5" />
+            🚀 QUERO O PACOTE COMPLETO AGORA
+            <ArrowRight className="ml-3 w-6 h-6" />
           </Button>
-          <Button 
-            variant="outline" 
-            size="lg" 
-            className="border-white/30 text-white hover:bg-white/10 px-8 py-4 text-lg rounded-xl backdrop-blur-sm"
-          >
-            Ver Pacotes Individuais
-          </Button>
+          
+          <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-400 mt-4">
+            <span>✅ Acesso Imediato</span>
+            <span>✅ Garantia de 7 Dias</span>
+            <span>✅ Suporte Incluído</span>
+            <span>✅ Atualizações Gratuitas</span>
+          </div>
         </div>
 
         {/* Social Proof */}
         <div className="mt-12 text-center">
-          <p className="text-gray-400 text-sm mb-4">Mais de 1.000 profissionais já transformaram seus negócios</p>
-          <div className="flex justify-center items-center gap-1">
+          <p className="text-gray-400 mb-4">Mais de 1.000 profissionais já automatizaram seus negócios</p>
+          <div className="flex justify-center items-center gap-2">
             {[...Array(5)].map((_, i) => (
-              <span key={i} className="text-yellow-400 text-lg">⭐</span>
+              <span key={i} className="text-yellow-400 text-xl">⭐</span>
             ))}
-            <span className="text-white ml-2 text-sm">(4.9/5 - 247 avaliações)</span>
+            <span className="text-white ml-2 font-semibold">4.9/5</span>
+            <span className="text-gray-400">(247 avaliações)</span>
           </div>
         </div>
       </div>

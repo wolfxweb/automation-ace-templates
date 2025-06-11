@@ -14,7 +14,7 @@ export const PackagesComparison = () => {
             Escolha a Melhor Opção para Você
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Compare nossas opções e veja como você pode economizar mais de 50% com o Pacote Completo
+            Compare nossas opções e veja como você pode economizar mais de 45% com o Pacote Completo
           </p>
         </div>
 
@@ -27,14 +27,14 @@ export const PackagesComparison = () => {
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="text-center">
-                <div className="text-4xl font-bold text-white mb-2">R$ 79,90</div>
+                <div className="text-4xl font-bold text-white mb-2">R$ 89,90</div>
                 <div className="text-gray-400">por pacote</div>
               </div>
 
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <Check className="w-5 h-5 text-green-400" />
-                  <span className="text-gray-300">Foco em área específica</span>
+                  <span className="text-gray-300">Foco em setor específico</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="w-5 h-5 text-green-400" />
@@ -50,7 +50,7 @@ export const PackagesComparison = () => {
                 </div>
                 <div className="flex items-center gap-3">
                   <X className="w-5 h-5 text-red-400" />
-                  <span className="text-gray-400">Total: R$ 399,50 (todos os 5)</span>
+                  <span className="text-gray-400">Total: R$ 539,40 (todos os 6)</span>
                 </div>
               </div>
 
@@ -75,33 +75,37 @@ export const PackagesComparison = () => {
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="text-center">
-                <div className="text-sm text-gray-400 line-through">De R$ 399,50</div>
-                <div className="text-5xl font-bold text-white mb-2">R$ 198,80</div>
+                <div className="text-sm text-gray-400 line-through">De R$ 539,40</div>
+                <div className="text-5xl font-bold text-white mb-2">R$ 299,90</div>
                 <Badge className="bg-green-500 text-white font-bold">
-                  ECONOMIZE R$ 200,70 (50% OFF)
+                  ECONOMIZE R$ 239,50 (45% OFF)
                 </Badge>
               </div>
 
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <Check className="w-5 h-5 text-green-400" />
-                  <span className="text-gray-300">TODOS os 5 pacotes inclusos</span>
+                  <span className="text-gray-300">TODOS os 6 pacotes inclusos</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="w-5 h-5 text-green-400" />
-                  <span className="text-gray-300">Automação completa e integrada</span>
+                  <span className="text-gray-300">Cobertura completa de todos os setores</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="w-5 h-5 text-green-400" />
-                  <span className="text-gray-300">Economia de mais de 50%</span>
+                  <span className="text-gray-300">Economia de mais de 45%</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="w-5 h-5 text-green-400" />
-                  <span className="text-gray-300">Cobertura total do seu negócio</span>
+                  <span className="text-gray-300">Templates para todas as áreas do negócio</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="w-5 h-5 text-green-400" />
                   <span className="text-gray-300">Melhor custo-benefício</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Check className="w-5 h-5 text-green-400" />
+                  <span className="text-gray-300">Mais de 50 templates prontos</span>
                 </div>
               </div>
 
@@ -122,17 +126,17 @@ export const PackagesComparison = () => {
             <h3 className="text-2xl font-bold text-white mb-4">Resumo da Comparação</h3>
             <div className="grid grid-cols-2 gap-8 text-center">
               <div>
-                <div className="text-3xl font-bold text-red-400 mb-2">R$ 399,50</div>
+                <div className="text-3xl font-bold text-red-400 mb-2">R$ 539,40</div>
                 <div className="text-gray-400">Comprando Separado</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-green-400 mb-2">R$ 198,80</div>
+                <div className="text-3xl font-bold text-green-400 mb-2">R$ 299,90</div>
                 <div className="text-gray-300">Pacote Completo</div>
               </div>
             </div>
             <div className="mt-6 p-4 bg-green-500/20 rounded-lg border border-green-500/30">
-              <div className="text-2xl font-bold text-green-400">Você Economiza R$ 200,70!</div>
-              <div className="text-green-300">Mais de 50% de desconto</div>
+              <div className="text-2xl font-bold text-green-400">Você Economiza R$ 239,50!</div>
+              <div className="text-green-300">Mais de 45% de desconto</div>
             </div>
           </div>
         </div>

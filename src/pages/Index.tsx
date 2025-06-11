@@ -11,107 +11,133 @@ const Index = () => {
   const packages = [
     {
       id: 1,
-      title: "Automação de WhatsApp e Comunicação",
-      subtitle: "Transforme seu Atendimento e Vendas no WhatsApp",
-      price: "79,90",
-      icon: "💬",
+      title: "Essencial de Marketing Digital e Vendas",
+      subtitle: "Otimize suas estratégias de marketing digital e vendas com automação inteligente",
+      price: "89,90",
+      icon: "📈",
       features: [
-        "Busca inteligente de palavras-chave em grupos",
-        "Disparos em massa eficientes",
-        "Gestão avançada de grupos (Evolution e Z-API)",
-        "Atendimento AI com agendamento e RAG",
-        "Criação de grupos com landing page"
+        "Marketing & Advertising: Automação de campanhas e gestão de anúncios",
+        "Social Media: Agendamento de posts e monitoramento de menções",
+        "Email Automation: Sequências de e-mail marketing e newsletters",
+        "Blog: Publicação automatizada e distribuição de conteúdo",
+        "Creative Content: Gestão de ativos e processos de aprovação",
+        "Sales: Automação de funis de vendas e qualificação de leads"
       ],
       benefits: [
-        "Economia de tempo massiva",
-        "Atendimento 24/7 com qualidade",
-        "Aumento da produtividade",
-        "Redução de erros",
-        "Escalabilidade de atendimento"
+        "Aumento da produtividade da equipe",
+        "Melhor personalização da comunicação",
+        "Escalabilidade das operações digitais",
+        "Automação inteligente de vendas",
+        "Otimização de campanhas"
       ]
     },
     {
       id: 2,
-      title: "Automação de Instagram e Redes Sociais",
-      subtitle: "Automatize interações, gerencie comentários e transforme seguidores em clientes",
-      price: "79,90",
-      icon: "📱",
+      title: "Otimização de Gestão e Operações",
+      subtitle: "Aprimore seus processos internos desde atendimento até RH e finanças",
+      price: "89,90",
+      icon: "⚙️",
       features: [
-        "Comentários com Leadscore",
-        "Respostas automáticas de DMs",
-        "Scraping de perfis, hashtags e publicações",
-        "Análise de engajamento automática",
-        "Qualificação de leads por interação"
+        "Customer Service: Automação de tickets e respostas automáticas",
+        "Human Resources: Onboarding e gestão de folha de pagamento",
+        "Finance & Accounting: Conciliação bancária e relatórios financeiros",
+        "Legal: Gestão de documentos e acompanhamento de processos",
+        "Logistics: Otimização da cadeia de suprimentos",
+        "Manufacturing: Automação de processos de produção",
+        "DevOps: Integração contínua e monitoramento de sistemas"
       ],
       benefits: [
-        "Engajamento aumentado",
-        "Geração de leads qualificados",
-        "Economia de tempo",
-        "Dados para decisões estratégicas",
-        "Gestão de volume maior de interações"
+        "Otimização da operação interna",
+        "Redução de erros manuais",
+        "Melhor comunicação entre departamentos",
+        "Conformidade em processos críticos",
+        "Eficiência operacional"
       ]
     },
     {
       id: 3,
-      title: "Automação Geral e Produtividade",
-      subtitle: "Simplifique tarefas, aumente eficiência e ganhe mais tempo",
-      price: "79,90",
-      icon: "⚡",
+      title: "Inovação em Tecnologia e Dados",
+      subtitle: "Ferramentas para extrair insights, automatizar tarefas complexas e construir soluções inovadoras",
+      price: "89,90",
+      icon: "🤖",
       features: [
-        "Resumos automáticos de reuniões",
-        "Geração de vídeos dinâmicos",
-        "Geração automática de contratos",
-        "Backups no Google Drive",
-        "Automação de documentos"
+        "AI/ML: Integração com modelos de IA e processamento de dados",
+        "Data Analytics: Coleta, transformação e visualização de dados",
+        "Software & IT: Automação de tarefas de TI e gestão de projetos",
+        "Web Development: Deploy automatizado e monitoramento de performance"
       ],
       benefits: [
-        "Alta eficiência",
-        "Menos erros",
-        "Segurança de dados",
-        "Mais tempo criativo e estratégico",
-        "Processos padronizados"
+        "Aceleração do desenvolvimento tecnológico",
+        "Extração máxima de valor dos dados",
+        "Sistemas sempre otimizados",
+        "Insights automatizados",
+        "Soluções inovadoras"
       ]
     },
     {
       id: 4,
-      title: "Marketing, Relatórios e Meta Ads",
-      subtitle: "Otimize campanhas, gere relatórios inteligentes e tome decisões estratégicas",
-      price: "79,90",
-      icon: "📊",
+      title: "Especializado em E-commerce e Varejo",
+      subtitle: "Otimize a experiência do cliente e o desempenho de vendas online",
+      price: "89,90",
+      icon: "🛒",
       features: [
-        "Relatórios detalhados de campanhas",
-        "Coleta automática de métricas",
-        "Criação e otimização de campanhas no Meta Ads",
-        "Gestão de tráfego automatizada",
-        "Dashboards em tempo real"
+        "E-commerce & Retail: Gestão completa de pedidos e estoque",
+        "Recuperação de carrinho abandonado automatizada",
+        "Personalização de ofertas para clientes",
+        "Integração com plataformas de pagamento e envio",
+        "Automação de processos de venda online"
       ],
       benefits: [
-        "Decisões rápidas baseadas em dados",
-        "Tempo poupado na análise",
-        "ROI maximizado",
-        "Apresentação profissional para clientes",
-        "Gestão eficiente de campanhas"
+        "Aumento da taxa de conversão",
+        "Melhoria da satisfação do cliente",
+        "Otimização da gestão de estoque",
+        "Escalabilidade de vendas online",
+        "Redução de carrinho abandonado"
       ]
     },
     {
       id: 5,
-      title: "Desenvolvimento e Integração",
-      subtitle: "Simplifique credenciais, padronize processos e desenvolva com segurança",
-      price: "79,90",
-      icon: "🛠️",
+      title: "Setorial: Indústria e Serviços Essenciais",
+      subtitle: "Automações específicas para agricultura, saúde, energia, imóveis e mais",
+      price: "89,90",
+      icon: "🏭",
       features: [
-        "Front-end para criação de credenciais",
-        "Gestão segura de APIs",
-        "Templates de integração",
-        "Configuração automatizada",
-        "Processo padronizado"
+        "Agriculture: Monitoramento de safras e gestão de equipamentos",
+        "Healthcare: Gestão de agendamentos e prontuários eletrônicos",
+        "Energy: Monitoramento de consumo e otimização de recursos",
+        "Real Estate: Gestão de leads e agendamento de visitas",
+        "Automotive: Gestão de estoque de peças e agendamento de serviços",
+        "Travel & Hospitality: Gestão de reservas e experiência do hóspede",
+        "Telecommunications: Gestão de serviços e atendimento ao cliente"
       ],
       benefits: [
-        "Processo acelerado e padronizado",
-        "Segurança reforçada",
-        "Redução de erros",
-        "Mais foco na lógica do negócio",
-        "Integrações mais rápidas"
+        "Otimização de operações complexas",
+        "Melhoria da eficiência setorial",
+        "Qualidade superior dos serviços",
+        "Conformidade regulatória",
+        "Processos específicos automatizados"
+      ]
+    },
+    {
+      id: 6,
+      title: "Setorial: Educação, Mídia e Governo",
+      subtitle: "Soluções para educação, entretenimento, governo e organizações sem fins lucrativos",
+      price: "89,90",
+      icon: "🎓",
+      features: [
+        "Education: Gestão de matrículas e comunicação com alunos",
+        "Gaming: Gestão de comunidades e análise de dados de jogadores",
+        "Media & Entertainment: Produção de mídia e gestão de direitos autorais",
+        "Government & NGO: Gestão de projetos sociais e comunicação com cidadãos",
+        "Non-Profit: Gestão de doadores e campanhas de arrecadação",
+        "Recruitment: Automação de processos de recrutamento e seleção"
+      ],
+      benefits: [
+        "Eficiência em organizações públicas",
+        "Melhor comunicação com stakeholders",
+        "Otimização de recursos",
+        "Gestão eficiente de projetos sociais",
+        "Automação de processos educacionais"
       ]
     }
   ];
@@ -125,10 +151,10 @@ const Index = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Escolha Seu Pacote de Automação
+              Escolha Seu Pacote de Templates N8N
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Cada pacote foi cuidadosamente desenvolvido para resolver problemas específicos do seu negócio
+              6 pacotes especializados desenvolvidos para resolver problemas específicos do seu setor
             </p>
           </div>
           

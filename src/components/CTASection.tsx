@@ -22,7 +22,7 @@ export const CTASection = () => {
         </h2>
 
         <p className="text-xl md:text-2xl text-gray-300 mb-12 leading-relaxed">
-          Enquanto você hesita, seus concorrentes estão automatizando e ganhando vantagem. 
+          Enquanto você hesita, seus concorrentes estão automatizando com templates N8N e ganhando vantagem. 
           <strong className="text-white"> Faça a escolha inteligente AGORA!</strong>
         </p>
 
@@ -32,7 +32,7 @@ export const CTASection = () => {
             <CardContent className="p-6 text-center">
               <Zap className="w-12 h-12 text-yellow-400 mx-auto mb-4" />
               <h3 className="text-white font-bold mb-2">Implementação Instantânea</h3>
-              <p className="text-gray-400 text-sm">Templates prontos para usar em minutos, não semanas</p>
+              <p className="text-gray-400 text-sm">Templates N8N prontos para usar em minutos, não semanas</p>
             </CardContent>
           </Card>
 
@@ -48,7 +48,7 @@ export const CTASection = () => {
             <CardContent className="p-6 text-center">
               <Crown className="w-12 h-12 text-purple-400 mx-auto mb-4" />
               <h3 className="text-white font-bold mb-2">Economia Máxima</h3>
-              <p className="text-gray-400 text-sm">Mais de 50% OFF apenas por tempo limitado</p>
+              <p className="text-gray-400 text-sm">Mais de 45% OFF apenas por tempo limitado</p>
             </CardContent>
           </Card>
         </div>
@@ -56,10 +56,10 @@ export const CTASection = () => {
         {/* Final CTA */}
         <div className="bg-black/30 backdrop-blur-sm rounded-3xl p-8 mb-8 border border-white/10">
           <div className="mb-6">
-            <div className="text-sm text-gray-400 line-through mb-2">De R$ 399,50</div>
-            <div className="text-5xl md:text-6xl font-bold text-white mb-2">R$ 198,80</div>
+            <div className="text-sm text-gray-400 line-through mb-2">De R$ 539,40</div>
+            <div className="text-5xl md:text-6xl font-bold text-white mb-2">R$ 299,90</div>
             <Badge className="bg-green-500 text-white font-bold text-lg px-4 py-2">
-              ECONOMIZE R$ 200,70 (50% OFF)
+              ECONOMIZE R$ 239,50 (45% OFF)
             </Badge>
           </div>
 
@@ -68,7 +68,7 @@ export const CTASection = () => {
               size="lg" 
               className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-6 text-xl rounded-2xl transform hover:scale-105 transition-all duration-300 shadow-2xl font-bold"
             >
-              🚀 SIM! QUERO AUTOMATIZAR MEU NEGÓCIO AGORA
+              🚀 SIM! QUERO TODOS OS 6 PACOTES AGORA
               <ArrowRight className="ml-3 w-6 h-6" />
             </Button>
 
@@ -99,7 +99,7 @@ export const CTASection = () => {
             ⚠️ Esta oferta especial expira em breve e não sabemos quando voltará!
           </p>
           <p className="text-gray-300 text-sm mt-2">
-            Mais de 1.000 profissionais já transformaram seus negócios. Seja o próximo!
+            Mais de 1.000 profissionais já transformaram seus negócios com nossos templates N8N. Seja o próximo!
           </p>
         </div>
       </div>
