@@ -52,6 +52,27 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
+      {/* Floating WhatsApp Button */}
+      <button
+        onClick={() => window.open('https://wa.me/YOUR_PHONE_NUMBER', '_blank')}
+        style={{
+          position: 'fixed',
+          bottom: '20px',
+          right: '20px',
+          backgroundColor: '#007bff',
+          color: 'white',
+          border: 'none',
+          borderRadius: '50%',
+          width: '60px',
+          height: '60px',
+          fontSize: '24px',
+          cursor: 'pointer',
+          boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
+          zIndex: 1000,
+        }}
+      >
+        💬
+      </button>
     </TooltipProvider>
   </QueryClientProvider>
 );
