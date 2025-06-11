@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -20,6 +19,32 @@ interface PackageCardProps {
 }
 
 export const PackageCard = ({ package: pkg }: PackageCardProps) => {
+  const executeN8NWorkflow = async (packageName: string) => {
+    try {
+      const response = await fetch('https://seu-servidor-n8n.com/webhook/seu-workflow', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          packageName: packageName,
+          // Outros dados necessários
+        }),
+      });
+
+      if (response.ok) {
+        console.log(`Workflow do N8N executado com sucesso para o pacote: ${packageName}!`);
+        // Redirecionar ou mostrar uma mensagem de sucesso
+      } else {
+        console.error('Erro ao executar o workflow do N8N');
+        // Tratar o erro
+      }
+    } catch (error) {
+      console.error('Erro ao chamar a API do N8N:', error);
+      // Tratar o erro
+    }
+  };
+
   return (
     <Card className="bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 transform hover:scale-105 group">
       <CardHeader className="text-center">
@@ -68,7 +93,10 @@ export const PackageCard = ({ package: pkg }: PackageCardProps) => {
           </ul>
         </div>
 
-        <Button className="w-full bg-gradient-to-r from-purple-600/20 to-pink-600/20 hover:from-purple-600 hover:to-pink-600 text-white border border-purple-500/30 hover:border-purple-500 transition-all duration-300">
+        <Button
+          className="w-full bg-gradient-to-r from-purple-600/20 to-pink-600/20 hover:from-purple-600 hover:to-pink-600 text-white border border-purple-500/30 hover:border-purple-500 transition-all duration-300"
+          onClick={() => executeN8NWorkflow(pkg.title)}
+        >
           Adquirir Este Pacote
           <ArrowRight className="ml-2 w-4 h-4" />
         </Button>

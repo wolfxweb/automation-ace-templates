@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -6,6 +5,33 @@ import { Badge } from '@/components/ui/badge';
 import { Check, X, Crown } from 'lucide-react';
 
 export const PackagesComparison = () => {
+  const executeN8NWorkflow = async () => {
+    try {
+      const response = await fetch('https://seu-servidor-n8n.com/webhook/seu-workflow', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          // Dados que você deseja enviar para o workflow
+          packageId: 'complete',
+          // Outros dados necessários
+        }),
+      });
+
+      if (response.ok) {
+        console.log('Workflow do N8N executado com sucesso!');
+        // Redirecionar ou mostrar uma mensagem de sucesso
+      } else {
+        console.error('Erro ao executar o workflow do N8N');
+        // Tratar o erro
+      }
+    } catch (error) {
+      console.error('Erro ao chamar a API do N8N:', error);
+      // Tratar o erro
+    }
+  };
+
   return (
     <section className="py-20 px-4 bg-black/20">
       <div className="max-w-6xl mx-auto">
@@ -109,7 +135,10 @@ export const PackagesComparison = () => {
                 </div>
               </div>
 
-              <Button className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-3 transform hover:scale-105 transition-all duration-300">
+              <Button
+                className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-3 transform hover:scale-105 transition-all duration-300"
+                onClick={executeN8NWorkflow}
+              >
                 🚀 QUERO O PACOTE COMPLETO AGORA
               </Button>
 
